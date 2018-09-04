@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Execution" verbose="0">
+
+<listeners>
+    <listener class-name="com.cigniti.utilities.TestsListenerAdapter" />
+  </listeners>
+  
+	<test name="Login On Chrome">
+		<parameter name="browser" value="firefox" />		
+		<classes>																																				 			 		 
+			 <class name="com.act.scripts.RegistrationScenario"/>  
+			<class name="com.act.scripts.NavigatingToClinicalServices"/>
+		    <class name="com.act.scripts.NavigatingToVolunteers"/>
+		    <class name="com.act.scripts.NavigatingToVolunteer"/> 		
+		</classes>
+	</test>
+</suite> 

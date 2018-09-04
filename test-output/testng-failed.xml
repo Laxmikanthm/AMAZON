@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Execution]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="com.cigniti.utilities.TestsListenerAdapter"/>
+  </listeners>
+  <test name="Login On Chrome(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.act.scripts.NavigatingToVolunteers">
+        <methods>
+          <include name="first"/>
+          <include name="first"/>
+          <include name="tearDown"/>
+          <include name="close"/>
+          <include name="Volunteers_Navigation"/>
+          <include name="tearDownFirefox"/>
+          <include name="reportHeader"/>
+        </methods>
+      </class> <!-- com.act.scripts.NavigatingToVolunteers -->
+    </classes>
+  </test> <!-- Login On Chrome(failed) -->
+</suite> <!-- Failed suite [Execution] -->
